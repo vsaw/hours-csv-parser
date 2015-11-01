@@ -1,0 +1,106 @@
+"Daily Time Detail -- project1"
+"01 October 2015 to 31 October 2015"
+
+"THURSDAY, 1 OCTOBER"
+[No entries]
+
+"FRIDAY, 2 OCTOBER"
+[No entries]
+
+"SATURDAY, 3 OCTOBER"
+[No entries]
+
+"SUNDAY, 4 OCTOBER"
+[No entries]
+
+"MONDAY, 5 OCTOBER"
+[No entries]
+
+"TUESDAY, 6 OCTOBER"
+[No entries]
+
+"WEDNESDAY, 7 OCTOBER"
+[No entries]
+
+"THURSDAY, 8 OCTOBER"
+[No entries]
+
+"FRIDAY, 9 OCTOBER"
+[No entries]
+
+"SATURDAY, 10 OCTOBER"
+[No entries]
+
+"SUNDAY, 11 OCTOBER"
+[No entries]
+
+"MONDAY, 12 OCTOBER"
+project1,9:00,12:00,3:00,""
+project1,13:00,18:00,5:00,""
+project1,,,--,""
+Total,8:00
+
+"TUESDAY, 13 OCTOBER"
+project1,9:00,12:00,3:00,""
+project1,12:45,18:30,5:45,""
+Total,8:45
+
+"WEDNESDAY, 14 OCTOBER"
+project1,8:45,12:00,3:15,""
+project1,12:45,18:00,5:15,""
+Total,8:30
+
+"THURSDAY, 15 OCTOBER"
+project1,13:00,19:45,6:45,""
+project1,9:00,12:00,3:00,""
+Total,9:45
+
+"FRIDAY, 16 OCTOBER"
+[No entries]
+
+"SATURDAY, 17 OCTOBER"
+[No entries]
+
+"SUNDAY, 18 OCTOBER"
+[No entries]
+
+"MONDAY, 19 OCTOBER"
+[No entries]
+
+"TUESDAY, 20 OCTOBER"
+[No entries]
+
+"WEDNESDAY, 21 OCTOBER"
+[No entries]
+
+"THURSDAY, 22 OCTOBER"
+[No entries]
+
+"FRIDAY, 23 OCTOBER"
+[No entries]
+
+"SATURDAY, 24 OCTOBER"
+[No entries]
+
+"SUNDAY, 25 OCTOBER"
+[No entries]
+
+"MONDAY, 26 OCTOBER"
+[No entries]
+
+"TUESDAY, 27 OCTOBER"
+[No entries]
+
+"WEDNESDAY, 28 OCTOBER"
+[No entries]
+
+"THURSDAY, 29 OCTOBER"
+[No entries]
+
+"FRIDAY, 30 OCTOBER"
+[No entries]
+
+"SATURDAY, 31 OCTOBER"
+[No entries]
+
+GRAND TOTAL,35:00

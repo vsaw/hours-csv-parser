@@ -1,0 +1,11 @@
+"Daily Time Detail -- All Projects"
+"12 October 2015 to 12 October 2015"
+
+"MONDAY, 12 OCTOBER"
+"project1","9:00","12:00",3:00,""
+"project1","13:00","18:00",5:00,""
+"project2","","",--,""
+Total,8:00
+
+
+GRAND TOTAL,8:00

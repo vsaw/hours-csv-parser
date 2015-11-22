@@ -95,22 +95,33 @@ def __parse_day(lines, project, current_line, year):
     res['pause'] = datetime.timedelta()
     i += 1
 
+
+    lines_for_day = []
     while lines[i][0] != 'Total':
         if project is None or lines[i][0] == project:
-            try:
-                if 'start' not in res.keys():
-                    res['start'] = __parse_time(lines[i][1])
-                else:
-                    tmp_start = res['finish']
-                    tmp_finish = __parse_time(lines[i][1])
-                    timedelta_start = __to_timedelta(tmp_start)
-                    timedelta_finish = __to_timedelta(tmp_finish)
-                    res['pause'] += timedelta_finish - timedelta_start
-                res['finish'] = __parse_time(lines[i][2])
-            except:
-                if config is not None and config.verbose:
-                    print 'Could not parse: %s' % lines[i]
+            lines_for_day.append(lines[i])
         i += 1
+
+    try:
+        lines_for_day.sort(key=lambda x: __parse_time(x[1]))
+    except:
+        if config is not None and config.verbose:
+            print 'Could not sort lines: %s' % lines_for_day
+
+    for i_day in range(len(lines_for_day)):
+        try:
+            if 'start' not in res.keys():
+                res['start'] = __parse_time(lines_for_day[i_day][1])
+            else:
+                tmp_start = res['finish']
+                tmp_finish = __parse_time(lines_for_day[i_day][1])
+                timedelta_start = __to_timedelta(tmp_start)
+                timedelta_finish = __to_timedelta(tmp_finish)
+                res['pause'] += timedelta_finish - timedelta_start
+            res['finish'] = __parse_time(lines_for_day[i_day][2])
+        except:
+            if config is not None and config.verbose:
+                print 'Could not parse: %s' % lines_for_day[i_day]
 
     # Calculate the total time
     res['total'] = __to_timedelta(res['finish']) - __to_timedelta(res['start']) - res['pause']

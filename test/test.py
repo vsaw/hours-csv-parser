@@ -67,3 +67,13 @@ class TestHoursCsvParser(unittest.TestCase):
         self.assertEqual(4, len(result))
         for i in range(len(result)):
             self.assertEqual(expected_totals_per_day[i], result[i]['total'])
+
+    def test_unsorted_entries_per_day(self):
+        result = HoursCsvParser.parse(self.DATA_SINGLE_PROJECT_MULTIPLE_DAYS)
+
+        # The last day has unsorted results. Inspect them in great detail
+        self.assertEqual(result[-1]['date'], datetime.date(2015, 10, 15))
+        self.assertEqual(result[-1]['start'], datetime.time(9, 0))
+        self.assertEqual(result[-1]['finish'], datetime.time(19, 45))
+        self.assertEqual(result[-1]['pause'], datetime.timedelta(hours=1))
+        self.assertEqual(result[-1]['total'], datetime.timedelta(hours=9, minutes=45))
